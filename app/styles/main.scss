@@ -1,4 +1,5 @@
 // bower:scss
+@import "bower_components/slick-carousel/slick/slick.scss";
 // endbower
 
 .browserupgrade {
@@ -9,6 +10,28 @@
 }
 
 nav {
-  background-color: #FFC107;
+  background-color: #fcfcfc;
   box-shadow: none;
+
+  ul {
+    li {
+      a {
+        color: #d87684;
+      }
+    }
+  }
+}
+
+
+.section-1 {
+  margin-top: 20px;
+  .fotos-slick {
+    .item-img {
+      img {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 750px;
+      }
+    }
+  }
 }

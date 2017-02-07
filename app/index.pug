@@ -4,26 +4,90 @@ block content
 	nav
 		.nav-wrapper
 			a.brand-logo(href='#!')
-				img(src="/images/logo-kprichos2.png", width="250")
+				img(src="/images/logo-kprichos2.png", width="271")
 			a.button-collapse.right(href='#', data-activates='mobile-demo')
 				i.material-icons.red-text.darken-1 menu
 
 			ul.right.hide-on-med-and-down
 				li
-					a(href='sass.html') Sass
+					a(href='#') Inicio
 				li
-					a(href='badges.html') Components
+					a(href='#') Productos
 				li
-					a(href='collapsible.html') Javascript
+					a(href='#') Telempanadilla
 				li
-					a(href='mobile.html') Mobile
+					a(href='#') Contacto
 
 			ul#mobile-demo.side-nav
 				li
-					a(href='sass.html') Sass
+					a(href='#') Inicio
 				li
-					a(href='badges.html') Components
+					a(href='#') Productos
 				li
-					a(href='collapsible.html') Javascript
+					a(href='#') Tele-empanadilla
 				li
-					a(href='mobile.html') Mobil3
+					a(href='#') Contacto
+
+
+	//- Slider
+	.row
+		.col.s12.section-1
+			.fotos-slick.slider-home
+				.item-img
+					img(src="images/sliderHome/1-empanadilla.jpg")
+				.item-img
+					img(src="images/sliderHome/2-sandwich.jpg")
+				.item-img
+					img(src="images/sliderHome/3-parrilla.jpg")
+
+	//- Texto
+	.row
+		.col.s6.offset-s3
+			p.center-align Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+	//- Cards
+	.row
+		.col.s12.m4
+			.card.hoverable
+				.card-image
+					img(src='images/sliderHome/1-empanadilla.jpg')
+					|
+					span.card-title EMPANADILLAS
+					|
+					a.btn-floating.halfway-fab.waves-effect.waves-light.red
+						i.material-icons add
+				|
+				.card-content
+					p
+					| I am a very simple card. I am good at containing small bits of information. I am convenient because
+					|	I require little markup to use
+
+		.col.s12.m4
+			.card.hoverable
+				.card-image
+					img(src='images/sliderHome/1-empanadilla.jpg')
+					|
+					span.card-title TELEMPANADILLA
+					|
+					a.btn-floating.halfway-fab.waves-effect.waves-light.red
+						i.material-icons add
+				|
+				.card-content
+					p
+					| I am a very simple card. I am good at containing small bits of information. I am convenient because
+					|	I require little markup to use
+
+		.col.s12.m4
+			.card.hoverable
+				.card-image
+					img(src='images/sliderHome/1-empanadilla.jpg')
+					|
+					span.card-title SÁNDWICHES
+					|
+					a.btn-floating.halfway-fab.waves-effect.waves-light.red
+						i.material-icons add
+				|
+				.card-content
+					p
+					| I am a very simple card. I am good at containing small bits of information. I am convenient because
+					|	I require little markup to use
