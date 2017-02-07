@@ -1,13 +1,29 @@
 extends layouts/default
 
 block content
-	.jumbotron
-		h1 'Allo, 'Allo!
-		p.lead Always a pleasure scaffolding your apps.
-		p
-			a.waves-effect.waves-light.btn
-				i.material-icons.right cloud
-				| button
+	nav
+		.nav-wrapper
+			a.brand-logo(href='#!')
+				img(src="/images/logo-kprichos2.png", width="250")
+			a.button-collapse.right(href='#', data-activates='mobile-demo')
+				i.material-icons.red-text.darken-1 menu
 
-    
+			ul.right.hide-on-med-and-down
+				li
+					a(href='sass.html') Sass
+				li
+					a(href='badges.html') Components
+				li
+					a(href='collapsible.html') Javascript
+				li
+					a(href='mobile.html') Mobile
 
+			ul#mobile-demo.side-nav
+				li
+					a(href='sass.html') Sass
+				li
+					a(href='badges.html') Components
+				li
+					a(href='collapsible.html') Javascript
+				li
+					a(href='mobile.html') Mobil3
