@@ -168,11 +168,11 @@ gulp.task('wiredep', () => {
     }))
     .pipe(gulp.dest('app/styles'));
 
-  gulp.src('app/layouts/*.pug')
+  gulp.src('app/*.pug')
     .pipe(wiredep({
       ignorePath: /^(\.\.\/)*\.\./
     }))
-    .pipe(gulp.dest('app/layouts'));
+    .pipe(gulp.dest('app'));
 });
 
 gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
