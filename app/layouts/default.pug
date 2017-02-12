@@ -30,6 +30,19 @@ html.no-js(lang='es')
 			p.browserupgrade You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
 		<![endif]-->
 
+
+		//- facebook
+		#fb-root
+		script.
+			(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.8&appId=294419107627967";
+			fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+
+
 		.container
 			block index
 
@@ -56,13 +69,12 @@ html.no-js(lang='es')
 								a.btn-flat.grey-text.text-lighten-3(href='#!') Sandwiches
 								|
 							li
-								a.btn-flat.grey-text.text-lighten-3(href='#!') Postres tradicionales
+								a.btn-flat.grey-text.text-lighten-3(href='#!') Postres
 			|
 			.footer-copyright
 				.container
 					| &copy; 2017 - Kprichos Argentinos
-					p Powered
-					a.grey-text.text-lighten-4.right(href='http://baumannzone.com/?ref=Kprichos') Baumannzone
+					a.grey-text.text-lighten-4.right(href='http://baumannzone.com/?ref=Kprichos') Powered by Baumannzone
 
 
 		// Google Analytics: change UA-XXXXX-X to be your site's ID.
