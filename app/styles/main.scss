@@ -36,6 +36,17 @@ nav {
   }
 }
 
+.section-cards {
+  .card-image {
+    background-color: rgba(245, 245, 245, 0.4) !important;
+
+    span {
+      text-shadow: 1px 4px 6px #000,
+                   2px 2px 2px #ffb4b7;
+    }
+  }
+}
+
 .section-map {
 	span.card-title {
 		color: #ee6e73;
