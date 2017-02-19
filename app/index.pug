@@ -32,19 +32,11 @@ html.no-js(lang='es')
 
 
 		//- facebook
-		#fb-root
-		script.
-			(function(d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) return;
-			js = d.createElement(s); js.id = id;
-			js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.8&appId=294419107627967";
-			fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));
+		include includes/facebook
 
 
 		.container
-			include includes/nav-menu.pug
+			include includes/nav-menu
 
 
 			//- Slider
@@ -64,7 +56,9 @@ html.no-js(lang='es')
 					.section
 						h5.center-align TELEMPANADILLA
 						.card-content
-							p.center-align Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							p.center-align Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+								| labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+								| aliquip ex ea commodo consequat.
 
 			//- Cards
 			.row
@@ -80,7 +74,7 @@ html.no-js(lang='es')
 							| I am a very simple card. I am good at containing small bits of information. I am convenient because
 							|	I require little markup to use
 						.card-action
-							a.btn.waves-effect.waves-light.orange.accent-4(href="#!") Ver más
+							a.btn.waves-effect.waves-light(href="#!") Ver más
 								//- i.material-icons.left add
 
 				.col.s12.m4
@@ -95,7 +89,7 @@ html.no-js(lang='es')
 							| I am a very simple card. I am good at containing small bits of information. I am convenient because
 							|	I require little markup to use
 						.card-action
-							a.btn.waves-effect.waves-light.orange.accent-4(href="#!") Ver más
+							a.btn.waves-effect.waves-light(href="#!") Ver más
 
 				.col.s12.m4
 					.card
@@ -109,7 +103,7 @@ html.no-js(lang='es')
 							|	I require little markup to use
 
 						.card-action
-							a.btn.waves-effect.waves-light.orange.accent-4(href="#!") Ver más
+							a.btn.waves-effect.waves-light(href="#!") Ver más
 
 
 			//- map & facebook
@@ -125,8 +119,8 @@ html.no-js(lang='es')
 					.card
 						.card-content
 							span.card-title DÓNDE ESTAMOS
-							p Mercado de Torrijos,
-							p Calle de Hermosilla, 82, 28001 Madrid
+							p: strong Mercado de Torrijos,
+							p: strong Calle de Hermosilla, 82, 28001 Madrid
 						.card-action
 							a.teal-text(href="https://www.facebook.com/kprichos.argentinos/")
 								img(src="images/FB-FindUsonFacebook-online-512_es_ES.png", width="200px")
