@@ -3,15 +3,20 @@
     img(src="images/home/pizzas.png")
     | PIZZAS
 
+  - var pizzas = [{"name":"Calabresa","ingr":"Mozzarella, pepperoni, ají","img":"calabresa"},{"name":"Cantábrica","ingr":"Mozzarella, anchoas, aceitunas negras, orégano","img":"cantabrica"},{"name":"Carbonara","ingr":"Mozzarella, bacon, cebolla, orégano","img":"carbonara"},{"name":"Cuatroquesos","ingr":"Mozzarella, emmental, gouda, queso azul, aceiitunas negras","img":"cuatroquesos"},{"name":"Fugazza","ingr":"Mozzarella, cebolla, aceite de oliva, aceitunas verdes, orégano","img":"fugazza"},{"name":"Funghi","ingr":"Mozzarella, jamón york, champiñones, aceitunas negras, orégano","img":"funghi"},{"name":"Hawaiana","ingr":"Mozzarella, jamón york, piña, cerezas","img":"hawaiana"},{"name":"Kprichos","ingr":"Queso de cabra, cebolla caramelizada, nueces, rúcula","img":"kprichos"},{"name":"Margharita","ingr":"Mozzarella, aceitunas verdes, orégano o chimichurri","img":"margharita"},{"name":"Napolitana","ingr":"Mozzarella, queso parmesano, tomate fresco, ajo, orégano","img":"napolitana"},{"name":"Pisto","ingr":"Mozzarella, pisto","img":"pisto"},{"name":"Vegetariana","ingr":"Queso de cabra, queso parmesano, espinacas frescas, aceite de oliva, acceto balsamico, aceitunas negras","img":"vegetariana"}]
+
+
   ul.productos.collapsible(data-collapsible="accordion")
     li
       .collapsible-header
-        span.new.badge(data-badge-caption="") 9
+        span.new.badge(data-badge-caption="")= pizzas.length
         i.material-icons filter_drama
-        | Carne
+        | Pizzas - Especialidades caseras
       .collapsible-body
         .row
-          .col.l4.m3.s12.valign-wrapper
-            .card-panel.grey.lighten-5.z-depth-1.valign.hoverable
-              img.responsive-img(src="images/home/sandwich.png")
-              h6.center-align sandwiches
+           each pizza in pizzas
+            .col.l3.m4.s12.valign-wrapper
+              .card-panel.grey.lighten-5.z-depth-1.valign.hoverable
+                img.responsive-img(src="images/products/" + pizza.img + ".png")
+                h5= pizza.name
+                p= pizza.ingr
