@@ -5,10 +5,13 @@
 
   - var empanadasCarne = [{"name":"Carne suave","img":"carne-suave"},{"name":"Carne picante","img":"carne-picante"},{"name":"Pollo","img":"pollo"},{"name":"Pollo picante","img":"pollo-picante"},{"name":"Pollo al curry","img":"pollo-curry"},{"name":"Pasas, nueces y cilantro","img":"pasas-nueces"},{"name":"Lomo y mango","img":"lomo-mango"},{"name":"Light","img":"light"},{"name":"Morcilla y Pera","img":"morcilla-pera"}]
 
+  - var empanadasQueso = [{"name":"Queso, bacon y pasas","img":"bacon-pasas"},{"name":"Cebolla caramelizada y rucula","img":"cebolla-caramelizada"},{"name":"Jamón y queso","img":"jamon-queso"},{"name":"Mozzarella, cebolla y albahaca","img":"mozza-cebolla"},{"name":"Mozzarella, tomate y albahaca","img":"mozza-tomate"},{"name":"Pavo y Roquefort","img":"pavo-roquefort"},{"name":"Pizza","img":"pizza"}]
+
   ul.productos.collapsible(data-collapsible="accordion")
+    //- Carne 
     li
       .collapsible-header.active
-        span.new.badge(data-badge-caption="")= empanadas.length
+        span.new.badge(data-badge-caption="")= empanadasCarne.length
         i.material-icons filter_drama
         | Carne
       .collapsible-body
@@ -17,46 +20,27 @@
             .col.l3.m4.s12
               .card.hoverable
                 .card-content.grey.lighten-5
-                  img.responsive-img(src="images/products/empanadas/" + empanada.img + ".png")
+                  img.responsive-img(src="images/products/empanadas/carne/" + empanada.img + ".png")
                 .card-action
                   h6.center-align= empanada.name
-          
 
-
+    //- Queso
     li
       .collapsible-header
-        span.new.badge(data-badge-caption="") 7
-        h5 Queso
+        span.new.badge(data-badge-caption="")= empanadasQueso.length
+        i.material-icons filter_drama
+        | Queso
       .collapsible-body
         .row
-          .col.l3.m4.s12.valign-wrapper
-            .card-panel.grey.lighten-5.z-depth-1.valign.hoverable
-              img.responsive-img(src="images/home/empanadas.png")
-              h6.center-align Carne Picante
-          .col.l3.m4.s12.valign-wrapper
-            .card-panel.grey.lighten-5.z-depth-1.valign.hoverable
-              img.responsive-img(src="images/home/empanadas.png")
-              h6.center-align Carne Picante
-          .col.l3.m4.s12.valign-wrapper
-            .card-panel.grey.lighten-5.z-depth-1.valign.hoverable
-              img.responsive-img(src="images/home/empanadas.png")
-              h6.center-align Carne Picante
-          .col.l3.m4.s12.valign-wrapper
-            .card-panel.grey.lighten-5.z-depth-1.valign.hoverable
-              img.responsive-img(src="images/home/empanadas.png")
-              h6.center-align Carne Picante
-          .col.l3.m4.s12.valign-wrapper
-            .card-panel.grey.lighten-5.z-depth-1.valign.hoverable
-              img.responsive-img(src="images/home/empanadas.png")
-              h6.center-align Carne Picante
-          .col.l3.m4.s12.valign-wrapper
-            .card-panel.grey.lighten-5.z-depth-1.valign.hoverable
-              img.responsive-img(src="images/home/empanadas.png")
-              h6.center-align Carne Picante
-          .col.l3.m4.s12.valign-wrapper
-            .card-panel.grey.lighten-5.z-depth-1.valign.hoverable
-              img.responsive-img(src="images/home/empanadas.png")
-              h6.center-align Carne Picante
+          each empanada in empanadasQueso
+            .col.l3.m4.s12
+              .card.hoverable
+                .card-content.grey.lighten-5
+                  img.responsive-img(src="images/products/empanadas/queso/" + empanada.img + ".png")
+                .card-action
+                  h6.center-align= empanada.name
+
+
 
     li
       .collapsible-header
