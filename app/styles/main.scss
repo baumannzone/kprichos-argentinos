@@ -58,19 +58,19 @@ nav {
 /* Producto
  ------------ */
 
- .producto.chip {
-   color: #c22339;
+.producto.chip {
+  color: #c22339;
+  height: 38px;
+  line-height: 38px;
+  font-size: 20px;
+
+  img {
     height: 38px;
-    line-height: 38px;
-    font-size: 20px;
+    width: initial;
+  }
+}
 
-    img {
-      height: 38px;
-      width: initial;
-   }
- }
-
- .productos.collapsible {
+.productos.collapsible {
   .card-panel {
     img {
       width: 100%;
@@ -79,3 +79,11 @@ nav {
     }
   }
  }
+
+
+.container.product-page {
+  .card .card-action {
+    padding: 2px 4px;
+    min-height: 50px;
+  }
+}
