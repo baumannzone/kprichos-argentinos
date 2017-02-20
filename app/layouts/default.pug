@@ -1,101 +1,224 @@
-doctype html
-html.no-js(lang='es')
-	head
-		meta(charset='utf-8')
-		meta(name='description', content='')
-		meta(name='viewport', content='width=device-width, initial-scale=1')
-		title KPRICHOS ARGENTINOS - Comida tradicional Argentina
-		link(rel='apple-touch-icon', href='apple-touch-icon.png')
-		// Place favicon.ico in the root directory
-
-		// build:css styles/vendor.css
-		// bower:css
-		link(rel='stylesheet', href='/bower_components/materialize/bin/materialize.css')
-		link(rel='stylesheet', href='/bower_components/slick-carousel/slick/slick-theme.css')
-		// endbower
-		// endbuild
-
-		// build:css styles/main.css
-		link(rel='stylesheet', href='styles/main.css')
-		// endbuild
-
-		// build:js scripts/vendor/modernizr.js
-		script(src='/bower_components/modernizr/modernizr.js')
-		// endbuild
-
-		link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
-
-	body
-		<!--[if lt IE 10]>
-			p.browserupgrade You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
-		<![endif]-->
-
-
-		//- facebook
-		#fb-root
-		script.
-			(function(d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) return;
-			js = d.createElement(s); js.id = id;
-			js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.8&appId=294419107627967";
-			fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));
-
-
-		.container
-			block index
-
-		footer.page-footer
-			.container
-				.row
-					.col.l6.s12
-						//- img(src="images/logo-kprichos2.png", width="200px")
-						h5.white-text Kprichos Argentinos
-						|
-						p.grey-text.text-lighten-4 Comida tradicional. Pastelería. Especialidades Argentinas. Catering. Envío a domicilio
-						p.red-text.text-darken-3 626 583 617 - kaprichosargentinos@yahoo.es
-						|
-					.col.l4.offset-l2.s12
-						h5.white-text Productos
-						|
-						ul
-							li
-								a.btn-flat.grey-text.text-lighten-3(href='#!') Empanadillas
-								|
-							li
-								a.btn-flat.grey-text.text-lighten-3(href='#!') Pizzas
-								|
-							li
-								a.btn-flat.grey-text.text-lighten-3(href='#!') Sandwiches
-								|
-							li
-								a.btn-flat.grey-text.text-lighten-3(href='#!') Postres
-			|
-			.footer-copyright
-				.container
-					| &copy; 2017 - Kprichos Argentinos
-					a.grey-text.text-lighten-4.right(href='http://baumannzone.com/?ref=Kprichos') Powered by Baumannzone
-
-
-		// Google Analytics: change UA-XXXXX-X to be your site's ID.
-		script.
-			(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-			function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-			e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-			e.src='https://www.google-analytics.com/analytics.js';
-			r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-			ga('create','UA-XXXXX-X');ga('send','pageview');
-
-		// build:js scripts/vendor.js
-		// bower:js
-		script(src='/bower_components/jquery/dist/jquery.js')
-		script(src='/bower_components/modernizr/modernizr.js')
-		script(src='/bower_components/materialize/bin/materialize.js')
-		script(src='/bower_components/slick-carousel/slick/slick.js')
-		// endbower
-		// endbuild
-
-		// build:js scripts/main.js
-		script(src='scripts/main.js')
-		// endbuild
+//- doctype html
+//- html.no-js(lang='es')
+//- 	head
+//- 		meta(charset='utf-8')
+//- 		meta(name='description', content='')
+//- 		meta(name='viewport', content='width=device-width, initial-scale=1')
+//- 		title KPRICHOS ARGENTINOS - Comida tradicional Argentina
+//- 		link(rel='apple-touch-icon', href='apple-touch-icon.png')
+//- 		// Place favicon.ico in the root directory
+//-
+//- 		// build:css styles/vendor.css
+//- 		// bower:css
+//- 		link(rel='stylesheet', href='/bower_components/materialize/bin/materialize.css')
+//- 		link(rel='stylesheet', href='/bower_components/slick-carousel/slick/slick-theme.css')
+//- 		// endbower
+//- 		// endbuild
+//-
+//- 		// build:css styles/main.css
+//- 		link(rel='stylesheet', href='styles/main.css')
+//- 		// endbuild
+//-
+//- 		// build:js scripts/vendor/modernizr.js
+//- 		script(src='/bower_components/modernizr/modernizr.js')
+//- 		// endbuild
+//-
+//- 		link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+//-
+//- 	body
+//- 		<!--[if lt IE 10]>
+//- 			p.browserupgrade You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+//- 		<![endif]-->
+//-
+//-
+//- 		//- facebook
+//- 		#fb-root
+//- 		script.
+//- 			(function(d, s, id) {
+//- 			var js, fjs = d.getElementsByTagName(s)[0];
+//- 			if (d.getElementById(id)) return;
+//- 			js = d.createElement(s); js.id = id;
+//- 			js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.8&appId=294419107627967";
+//- 			fjs.parentNode.insertBefore(js, fjs);
+//- 			}(document, 'script', 'facebook-jssdk'));
+//-
+//-
+//- 		.container
+//- 			//- block index
+//-
+//- 			nav
+//- 				.nav-wrapper
+//- 					a.brand-logo(href='#!')
+//- 						img(src="images/logo-kprichos2.png", width="271")
+//- 					a.button-collapse.right(href='#', data-activates='mobile-demo')
+//- 						i.material-icons.red-text.darken-1 menu
+//-
+//- 					ul.right.hide-on-med-and-down
+//- 						li
+//- 							a(href='#') Inicio
+//- 						li
+//- 							a(href='#') Productos
+//- 						li
+//- 							a(href='#') Telempanadilla
+//- 						li
+//- 							a(href='#') Contacto
+//-
+//- 					ul#mobile-demo.side-nav
+//- 						li
+//- 							a(href='#') Inicio
+//- 						li
+//- 							a(href='#') Productos
+//- 						li
+//- 							a(href='#') Tele-empanadilla
+//- 						li
+//- 							a(href='#') Contacto
+//-
+//-
+//- 			//- Slider
+//- 			.row
+//- 				.col.s12.section-1
+//- 					.fotos-slick.slider-home
+//- 						.item-img
+//- 							img(src="images/sliderHome/1-empanadilla.jpg")
+//- 						.item-img
+//- 							img(src="images/sliderHome/2-sandwich.jpg")
+//- 						.item-img
+//- 							img(src="images/sliderHome/3-parrilla.jpg")
+//-
+//- 			//- Texto
+//- 			.row
+//- 				.col.s8.offset-s2
+//- 					.section
+//- 						h5.center-align TELEMPANADILLA
+//- 						.card-content
+//- 							p.center-align Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+//-
+//- 			//- Cards
+//- 			.row
+//- 				.col.s12.m4
+//- 					.card
+//- 						.card-image.grey.lighten-2
+//- 							img(src='images/home/empanadas.png')
+//- 							|
+//- 							span.card-title EMPANADILLAS
+//- 						|
+//- 						.card-content
+//- 							p
+//- 							| I am a very simple card. I am good at containing small bits of information. I am convenient because
+//- 							|	I require little markup to use
+//- 						.card-action
+//- 							a.btn.waves-effect.waves-light.orange.accent-4(href="#!") Ver más
+//- 								//- i.material-icons.left add
+//-
+//- 				.col.s12.m4
+//- 					.card
+//- 						.card-image.grey.lighten-2
+//- 							img(src='images/home/pizzas.png')
+//- 							|
+//- 							span.card-title PIZZAS
+//- 						|
+//- 						.card-content
+//- 							p
+//- 							| I am a very simple card. I am good at containing small bits of information. I am convenient because
+//- 							|	I require little markup to use
+//- 						.card-action
+//- 							a.btn.waves-effect.waves-light.orange.accent-4(href="#!") Ver más
+//-
+//- 				.col.s12.m4
+//- 					.card
+//- 						.card-image.grey.lighten-2
+//- 							img(src='images/home/sandwich.png')
+//- 							|
+//- 							span.card-title SÁNDWICHES
+//- 						.card-content
+//- 							p
+//- 							| I am a very simple card. I am good at containing small bits of information. I am convenient because
+//- 							|	I require little markup to use
+//-
+//- 						.card-action
+//- 							a.btn.waves-effect.waves-light.orange.accent-4(href="#!") Ver más
+//-
+//-
+//- 			//- map & facebook
+//- 			.row.section-map
+//- 				.col.l8.m12.s12
+//- 					.card
+//- 						.card-content
+//- 							iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6074.4780645318015!2d-3.676763600000006!3d40.4257057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x225da0138560477b!2sKprichos+Argentinos!5e0!3m2!1sen!2ses!4v1486840451068', width='100%', height='400', frameborder='0', style='border:0', allowfullscreen='')
+//- 						.card-action
+//- 							a.btn(href="https://www.google.com/maps?ll=40.425706,-3.676764&z=15&t=m&hl=es-ES&gl=ES&mapclient=embed&cid=2476311375826143099") Ampliar mapa
+//-
+//- 				.col.l4.m6.s12
+//- 					.card
+//- 						.card-content
+//- 							span.card-title DÓNDE ESTAMOS
+//- 							p Mercado de Torrijos,
+//- 							p Calle de Hermosilla, 82, 28001 Madrid
+//- 						.card-action
+//- 							a.teal-text(href="https://www.facebook.com/kprichos.argentinos/")
+//- 								img(src="images/FB-FindUsonFacebook-online-512_es_ES.png", width="200px")
+//-
+//- 							p Síguenos en facebook para ser el primero en enterarte de nuestras ofertas
+//- 							p: a.teal-text(href="https://www.facebook.com/kprichos.argentinos/") Ver página en FB
+//-
+//- 							.fb-like(data-href='https://www.facebook.com/kprichos.argentinos/', data-layout='box_count', data-action='like', data-size='small', data-show-faces='false', data-share='true')
+//-
+//-
+//-
+//-
+//-
+//-
+//-
+//- 		footer.page-footer
+//- 			.container
+//- 				.row
+//- 					.col.l6.s12
+//- 						//- img(src="images/logo-kprichos2.png", width="200px")
+//- 						h5.white-text Kprichos Argentinos
+//- 						|
+//- 						p.grey-text.text-lighten-4 Comida tradicional. Pastelería. Especialidades Argentinas. Catering. Envío a domicilio
+//- 						p.red-text.text-darken-3 626 583 617 - kaprichosargentinos@yahoo.es
+//- 						|
+//- 					.col.l4.offset-l2.s12
+//- 						h5.white-text Productos
+//- 						|
+//- 						ul
+//- 							li
+//- 								a.btn-flat.grey-text.text-lighten-3(href='#!') Empanadillas
+//- 								|
+//- 							li
+//- 								a.btn-flat.grey-text.text-lighten-3(href='#!') Pizzas
+//- 								|
+//- 							li
+//- 								a.btn-flat.grey-text.text-lighten-3(href='#!') Sandwiches
+//- 								|
+//- 							li
+//- 								a.btn-flat.grey-text.text-lighten-3(href='#!') Postres
+//- 			|
+//- 			.footer-copyright
+//- 				.container
+//- 					| &copy; 2017 - Kprichos Argentinos
+//- 					a.grey-text.text-lighten-4.right(href='http://baumannzone.com/?ref=Kprichos') Powered by Baumannzone
+//-
+//-
+//- 		// Google Analytics: change UA-XXXXX-X to be your site's ID.
+//- 		script.
+//- 			(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+//- 			function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+//- 			e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+//- 			e.src='https://www.google-analytics.com/analytics.js';
+//- 			r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+//- 			ga('create','UA-XXXXX-X');ga('send','pageview');
+//-
+//- 		// build:js scripts/vendor.js
+//- 		// bower:js
+//- 		script(src='/bower_components/jquery/dist/jquery.js')
+//- 		script(src='/bower_components/modernizr/modernizr.js')
+//- 		script(src='/bower_components/materialize/bin/materialize.js')
+//- 		script(src='/bower_components/slick-carousel/slick/slick.js')
+//- 		// endbower
+//- 		// endbuild
+//-
+//- 		// build:js scripts/main.js
+//- 		script(src='scripts/main.js')
+//- 		// endbuild
