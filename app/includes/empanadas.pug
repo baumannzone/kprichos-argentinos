@@ -1,0 +1,97 @@
+.section
+  .producto.chip
+    img(src="images/home/empanadas.png")
+    | EMPANADILLAS
+
+  - var empanadasCarne = [{"name":"Carne suave","img":"carne-suave"},{"name":"Carne picante","img":"carne-picante"},{"name":"Pollo","img":"pollo"},{"name":"Pollo picante","img":"pollo-picante"},{"name":"Pollo al curry","img":"pollo-curry"},{"name":"Pasas, nueces y cilantro","img":"pasas-nueces"},{"name":"Lomo y mango","img":"lomo-mango"},{"name":"Light","img":"light"},{"name":"Morcilla y Pera","img":"morcilla-pera"}]
+  - var empanadasQueso = [{"name":"Queso, bacon y pasas","img":"bacon-pasas"},{"name":"Cebolla caramelizada y rucula","img":"cebolla-caramelizada"},{"name":"Jamón y queso","img":"jamon-queso"},{"name":"Mozzarella, cebolla y albahaca","img":"mozza-cebolla"},{"name":"Mozzarella, tomate y albahaca","img":"mozza-tomate"},{"name":"Pavo y Roquefort","img":"pavo-roquefort"},{"name":"Pizza","img":"pizza"}]
+  - var empanadasVegetarianas = [{"name":"Espinacas y bechamel","img":"espinaca-bechamel"},{"name":"Espinacas, manzana y piñones","img":"espinaca-manzana"},{"name":"Calabaza y Maíz","img":"calabaza-maiz"},{"name":"Bechamel y Maíz","img":"bechamel-maiz"},{"name":"Pisto y setas","img":"pisto-setas"}]
+  - var empanadasVeganas = [{ "name":"Carne vegana","img":"carne-vegana"},{"name":"Espinacas vegana","img":"espinaca-vegana"},{"name":"Bechamel y Maíz","img":"bechamel-maiz-vegana"},{"name":"Legumbres","img":"legumbres"}]
+  - var empanadasPescado = [{ "name": "Atún", "img": "atun" }]
+
+  ul.productos.collapsible(data-collapsible="accordion")
+    //- Carne 
+    li
+      .collapsible-header
+        span.new.badge(data-badge-caption="")= empanadasCarne.length
+        i.material-icons star
+        | Carne
+      .collapsible-body
+        .row
+          each empanada in empanadasCarne
+            .col.l3.m4.s12
+              .card.hoverable
+                .card-content.grey.lighten-5
+                  img.responsive-img(src="images/products/empanadas/carne/" + empanada.img + ".png")
+                .card-action
+                  .centrado-vertical
+                    h6.center-align= empanada.name
+
+    //- Queso
+    li
+      .collapsible-header
+        span.new.badge(data-badge-caption="")= empanadasQueso.length
+        i.material-icons star
+        | Queso
+      .collapsible-body
+        .row
+          each empanada in empanadasQueso
+            .col.l3.m4.s12
+              .card.hoverable
+                .card-content.grey.lighten-5
+                  img.responsive-img(src="images/products/empanadas/queso/" + empanada.img + ".png")
+                .card-action
+                  .centrado-vertical
+                    h6.center-align= empanada.name
+
+
+    //- Vegetarianas
+    li
+      .collapsible-header
+        span.new.badge(data-badge-caption="")= empanadasVegetarianas.length
+        i.material-icons star
+        | Vegetarianas
+      .collapsible-body
+        .row
+          each empanada in empanadasVegetarianas
+            .col.l3.m4.s12
+              .card.hoverable
+                .card-content.grey.lighten-5
+                  img.responsive-img(src="images/products/empanadas/vegetarianas/" + empanada.img + ".png")
+                .card-action
+                  .centrado-vertical
+                    h6.center-align= empanada.name
+          
+    //- Veganas
+    li
+      .collapsible-header
+        span.new.badge(data-badge-caption="")= empanadasVeganas.length
+        i.material-icons star
+        | Veganas
+      .collapsible-body
+        .row
+          each empanada in empanadasVeganas
+            .col.l3.m4.s12
+              .card.hoverable
+                .card-content.grey.lighten-5
+                  img.responsive-img(src="images/products/empanadas/veganas/" + empanada.img + ".png")
+                .card-action
+                  .centrado-vertical
+                    h6.center-align= empanada.name
+          
+
+    li
+      .collapsible-header
+        span.new.badge(data-badge-caption="") 1
+        i.material-icons star
+        | Pescado
+      .collapsible-body
+        .row
+          each empanada in empanadasPescado
+            .col.l3.m4.s12
+              .card.hoverable
+                .card-content.grey.lighten-5
+                  img.responsive-img(src="images/products/empanadas/pescado/" + empanada.img + ".png")
+                .card-action
+                  .centrado-vertical
+                    h6.center-align= empanada.name

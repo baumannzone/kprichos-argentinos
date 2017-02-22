@@ -36,9 +36,84 @@ nav {
   }
 }
 
+.section-cards {
+  .card-image {
+    background-color: rgba(245, 245, 245, 0.4) !important;
+
+    span {
+      text-shadow: 1px 4px 6px #000,
+                   2px 2px 2px #ffb4b7;
+    }
+  }
+}
+
 .section-map {
 	span.card-title {
 		color: #ee6e73;
 		font-weight: 300;
 	}
+}
+
+
+/* Producto
+ ------------ */
+
+.producto.chip {
+  color: #c22339;
+  height: 38px;
+  line-height: 38px;
+  font-size: 20px;
+
+  img {
+    height: 38px;
+    width: initial;
+  }
+}
+
+.productos.collapsible {
+  .card-panel {
+    img {
+      width: 100%;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+ }
+
+
+.container.product-page {
+  .card .card-action {
+    padding: 2px 4px;
+    min-height: 65px;
+
+    .centrado-vertical {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 65px;
+
+    }
+    
+  }
+}
+
+
+.productos.pizzas {
+  .card.hoverable {
+    .card-content {
+      padding: 0;
+    }
+    .card-action {
+      p {
+        padding: 0 5px;
+      }
+    }
+  }
+}
+
+// Logo Left
+nav .brand-logo {
+  left: 0;
+  -webkit-transform: translateX(0%); 
+  transform: translateX(0%); 
 }
