@@ -84,6 +84,15 @@ nav {
 .container.product-page {
   .card .card-action {
     padding: 2px 4px;
-    min-height: 50px;
+    min-height: 65px;
+
+    .centrado-vertical {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 65px;
+
+    }
+    
   }
 }
