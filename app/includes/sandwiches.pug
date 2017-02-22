@@ -3,15 +3,48 @@
     img(src="images/home/sandwich.png")
     | SANDWICHES
 
+    - var sandwiches1 = ['Jamón york y queso', 'Jamón york, roquefort y nueces', 'Jamón york y piña', 'Jamón york, lechuga y tomate', 'Jamón serrano y tomate', 'Jamón serrano y queso', 'Pavo y queso', 'Cebolla caramelizada y queso', 'Pimiento caramelizado con queso' ]
+    - var sandwiches2 = ['Atún, huevo y aceitunas', 'Queso, lechuga y tomate', 'Cangrejo y queso', 'Jamón york, palmitos y queso', 'Queso con fresa o frambuesa', 'Guacamole, tomate y queso', 'Pavo, queso, mostaza y miel', 'Confitura de tomate con queso', 'Confitura de tomate con jamón york' ]
+
   ul.productos.collapsible(data-collapsible="accordion")
     li
-      .collapsible-header
-        span.new.badge(data-badge-caption="") 9
-        i.material-icons filter_drama
-        | Carne
+      .collapsible-header.truncate
+        span.new.badge(data-badge-caption="")= (sandwiches1.length + sandwiches2.length)
+        i.material-icons star
+        | Combínalos!
       .collapsible-body
         .row
-          .col.l4.m3.s12.valign-wrapper
-            .card-panel.grey.lighten-5.z-depth-1.valign.hoverable
+          .col.s12
+            .card.brown.lighten-2
+              .card-content.white-text.center-align
+                h5 PAN
+                br
+                .chip.deep-orange.lighten-1.brown-text.text-darken-2 Blanco
+                .chip.deep-orange.lighten-1.brown-text.text-darken-2 Integral
+                .chip.deep-orange.lighten-1.brown-text.text-darken-2 Tomate
+                .chip.deep-orange.lighten-1.brown-text.text-darken-2 Espinacas
+                .chip.deep-orange.lighten-1.brown-text.text-darken-2 Semillas de amapola
+                .chip.deep-orange.lighten-1.brown-text.text-darken-2 Arándanos
+          
+          .col.m6.s12
+            .card
+              .card-content
+                ul.collection
+                  each item in sandwiches1
+                    li.collection-item= item
+
+          .col.m6.s12
+            .card
+              .card-content
+                ul.collection
+                  each item in sandwiches2
+                    li.collection-item= item
+                
+          .col.s12
+            .card-panel.grey.lighten-5
               img.responsive-img(src="images/home/sandwich.png")
-              h6.center-align sandwiches
+
+          .col.s12.center-align
+            .card
+              .card-content
+                p.grey-text Consultar disponibilidad y promociones
