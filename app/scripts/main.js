@@ -2,6 +2,7 @@ var Main = {
   init: function() {
     Main.initMobileNav();
     Main.homeCarousel();
+    Main.macy();
   },
 
   initMobileNav: function () {
@@ -18,8 +19,25 @@ var Main = {
       dots: true,
       mobileFirst: true
     });
+  },
+
+  macy: function () {
+    Macy.init({
+      container: '#macy-cont',
+      trueOrder: false,
+      waitForImages: false,
+      margin: 15,
+      breakAt: {
+        940: 3,
+        650: 2,
+        400: 1
+      }
+    });
   }
 
 };
 
-Main.init();
+$(function() {
+  Main.init();
+});
+

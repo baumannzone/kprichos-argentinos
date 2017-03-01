@@ -1,79 +1,192 @@
 doctype html
 html.no-js(lang='es')
-	head
-		meta(charset='utf-8')
-		meta(name='description', content='')
-		meta(name='viewport', content='width=device-width, initial-scale=1')
-		title KPRICHOS ARGENTINOS - Productos
-		link(rel='apple-touch-icon', href='apple-touch-icon.png')
-		// Place favicon.ico in the root directory
+  head
+    meta(charset='utf-8')
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title KPRICHOS ARGENTINOS - Productos
+    link(rel='apple-touch-icon', href='apple-touch-icon.png')
+    // Place favicon.ico in the root directory
 
-		// build:css styles/vendor.css
-		// bower:css
-		link(rel='stylesheet', href='/bower_components/materialize/bin/materialize.css')
-		link(rel='stylesheet', href='/bower_components/slick-carousel/slick/slick-theme.css')
-		// endbower
-		// endbuild
+    // build:css styles/vendor.css
+    // bower:css
+    link(rel='stylesheet', href='/bower_components/materialize/bin/materialize.css')
+    link(rel='stylesheet', href='/bower_components/slick-carousel/slick/slick-theme.css')
+    // endbower
+    // endbuild
 
-		// build:css styles/main.css
-		link(rel='stylesheet', href='styles/main.css')
-		// endbuild
+    // build:css styles/main.css
+    link(rel='stylesheet', href='styles/main.css')
+    // endbuild
 
-		// build:js scripts/vendor/modernizr.js
-		script(src='/bower_components/modernizr/modernizr.js')
-		// endbuild
+    // build:js scripts/vendor/modernizr.js
+    script(src='/bower_components/modernizr/modernizr.js')
+    // endbuild
 
-		link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
 
-	body
-		<!--[if lt IE 10]>
-			p.browserupgrade You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
-		<![endif]-->
-
-
-		//- facebook
-		include includes/facebook
+  body
+    <!--[if lt IE 10]>
+    p.browserupgrade You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+    <![endif]-->
 
 
-		.container.product-page
-			include includes/nav-menu
-
-			//- Texto
-			.row
-				.col.s8.offset-s2
-					.section
-						h3.center-align Principal
-						.card-content
-							p.center-align Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-			include includes/empanadas
-
-			include includes/pizzas
-
-			include includes/sandwiches
+    //- facebook
+    include includes/facebook
 
 
-		include includes/footer
+    .container.product-page
+      include includes/nav-menu
+
+      //- Texto
+      .row
+        .col.s8.offset-s2
+          .section
+            h4.center-align Principal
+            .card-content
+              p.center-align Productos estrella de Kprichos Argentinos. ¡Siempre disponibles!
+
+      include includes/empanadas
+
+      include includes/pizzas
+
+      include includes/sandwiches
+
+      //- Texto
+      .row
+        .col.s8.offset-s2
+          .section
+            h4.center-align Catering
+            .card-content
+              p.center-align Productos para ktering. Recomendado encargar con 24hs de antelación.
+                br
+                | Haga su pedido y consulte servicio a domicilio y ktering para fiestas y eventos.
+
+      .divider
+      .row
+        .col.s12
+
+          #macy-cont
+            .card.hoverable
+              .card-content.grey.lighten-5
+                span.card-title.center-align
+                  strong.pink-text Quichés
+              .card-action
+                .centrado-vertical
+                  ul.browser-default
+                    li Jamón y Queso
+                    li Pollo, queso y aceitunas
+                    li Champiñones y puerros
+                    li Pascualina de espinacas
+
+            .card.hoverable
+              .card-content.grey.lighten-5
+                span.card-title.center-align
+                  strong.pink-text Arrolladitos Salados
+                  h6.grey-text (Pionono)
+              .card-action
+                .centrado-vertical
+                  ul.browser-default
+                    li Piña, cereza y jamón york
+                    li Salmón, cangrejo y queso
+                    li Atún, aceitunas, pimiento morrón y pepinillos
+                    li Roquefort, nueces, pimiento morrón y jamón york
+                    li Palmitos, salsa rosa, pimiento morrón y jamón york
+                    li Pavo trufado, queso semicurado, pimiento caramelizado
+
+            .card.hoverable
+              .card-content.grey.lighten-5
+                span.card-title.center-align
+                  strong.pink-text Focaccia de Milanesa
+              .card-action
+                .centrado-vertical
+                  ul.browser-default
+                    li Napolitana
+                    li Kprichos
+                    li Cuatroquesos
+                    li Patagónica
+
+            .card.hoverable
+              .card-content.grey.lighten-5
+                span.card-title.center-align
+                  strong.pink-text Canelones
+              .card-action
+                .centrado-vertical
+                  ul.browser-default
+                    li Espinaca
+                    li Pollo
+                    li Carne
+
+            .card.hoverable
+              .card-content.grey.lighten-5
+                span.card-title.center-align
+                  strong.pink-text Tartas
+              .card-action
+                .centrado-vertical
+                  ul.browser-default
+                    li Rogel
+                    li Balcarce
+                    li Brownie
+                    li Lemon pie
+                    li Ricota
+                    li Tiramisú
+                    li Chaja
+                    li Sacher
+                    li Arrollado de dulce de leche
+                    li Tarta personalizada
+
+            .card.hoverable
+              .card-content.grey.lighten-5
+                span.card-title.center-align
+                  strong.pink-text Pastelería Argentina
+              .card-action
+                .centrado-vertical
+                  ul.browser-default
+                    li Crepes de dulce de leche
+                    li Crepes de chocolate
+                    li Alfajores
+                    li Pasta Frola
+
+            .card.hoverable
+              .card-content.grey.lighten-5
+                span.card-title.center-align
+                  strong Además...
+              .card-action
+                .centrado-vertical
+                  ul.browser-default
+                    li Kopas desde 5€
+                    li Menú del día
+                    li Envío a domicilio
+                    li After-Work
 
 
-		// Google Analytics: change UA-XXXXX-X to be your site's ID.
-		script.
-			(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-			function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-			e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-			e.src='https://www.google-analytics.com/analytics.js';
-			r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-			ga('create','UA-XXXXX-X');ga('send','pageview');
+    include includes/footer
 
-		// build:js scripts/vendor.js
-		// bower:js
-		script(src='/bower_components/jquery/dist/jquery.js')
-		script(src='/bower_components/modernizr/modernizr.js')
-		script(src='/bower_components/materialize/bin/materialize.js')
-		script(src='/bower_components/slick-carousel/slick/slick.js')
-		// endbower
-		// endbuild
 
-		// build:js scripts/main.js
-		script(src='scripts/main.js')
-		// endbuild
+    // Google Analytics: change UA-XXXXX-X to be your site's ID.
+    script.
+      (function ( b, o, i, l, e, r ) {
+        b.GoogleAnalyticsObject = l;
+        b[ l ] || (b[ l ] =
+          function () {(b[ l ].q = b[ l ].q || []).push( arguments )});
+        b[ l ].l = +new Date;
+        e = o.createElement( i );
+        r = o.getElementsByTagName( i )[ 0 ];
+        e.src = 'https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore( e, r )
+      }( window, document, 'script', 'ga' ));
+      ga( 'create', 'UA-XXXXX-X' );ga( 'send', 'pageview' );
+
+    // build:js scripts/vendor.js
+    // bower:js
+    script(src='/bower_components/jquery/dist/jquery.js')
+    script(src='/bower_components/modernizr/modernizr.js')
+    script(src='/bower_components/materialize/bin/materialize.js')
+    script(src='/bower_components/slick-carousel/slick/slick.js')
+    script(src='/bower_components/macy/dist/macy.js')
+    // endbower
+    // endbuild
+
+    // build:js scripts/main.js
+    script(src='scripts/main.js')
+    // endbuild

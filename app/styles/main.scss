@@ -22,6 +22,9 @@ nav {
   }
 }
 
+.slider-home .slick-dots li button:before {
+  font-size: 20px;
+}
 
 .section-1 {
   margin-top: 20px;
@@ -93,7 +96,18 @@ nav {
       min-height: 65px;
 
     }
-    
+  }
+}
+
+#macy-cont {
+  .card {
+    .card-action {
+      padding: 5px 16px;
+
+      ul {
+        padding-left: 20px;
+      }
+    }
   }
 }
 
@@ -114,6 +128,6 @@ nav {
 // Logo Left
 nav .brand-logo {
   left: 0;
-  -webkit-transform: translateX(0%); 
-  transform: translateX(0%); 
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
 }
