@@ -3,6 +3,7 @@ var Main = {
     Main.initMobileNav();
     Main.homeCarousel();
     Main.macy();
+    Main.parallax();
   },
 
   initMobileNav: function () {
@@ -21,6 +22,7 @@ var Main = {
     });
   },
 
+  // Masonry (Products)
   macy: function () {
     Macy.init({
       container: '#macy-cont',
@@ -33,6 +35,10 @@ var Main = {
         400: 1
       }
     });
+  },
+
+  parallax: function () {
+    $('.parallax').parallax();
   }
 
 };
