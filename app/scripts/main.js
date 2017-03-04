@@ -1,32 +1,31 @@
-(function (  ) {
+(function () {
   'use strict';
 
-  var Main = {
-    init: function() {
+  let Main = {
+    init: function () {
       Main.initMobileNav();
       Main.homeCarousel();
       Main.macy();
     },
 
     initMobileNav: function () {
-      $('.button-collapse').sideNav();
+      $( '.button-collapse' ).sideNav();
     },
-
 
     // Slick carousel
     homeCarousel: function () {
-      $('.fotos-slick').slick({
+      $( '.fotos-slick' ).slick( {
         autoplay: true,
         autoplaySpeed: 4000,
         arrows: false,
         dots: true,
         mobileFirst: true
-      });
+      } );
     },
 
-    // Masonry (Products)
+    // Masonry Style (Products)
     macy: function () {
-      Macy.init({
+      Macy.init( {
         container: '#macy-cont',
         trueOrder: false,
         waitForImages: false,
@@ -36,13 +35,14 @@
           650: 2,
           400: 1
         }
-      });
+      } );
     }
 
   };
 
-  $(function() {
+  // Ready
+  $( function () {
     Main.init();
-  });
+  } );
 
 })();

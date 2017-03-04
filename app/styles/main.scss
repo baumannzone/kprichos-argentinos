@@ -45,18 +45,17 @@ nav {
 
     span {
       text-shadow: 1px 4px 6px #000,
-                   2px 2px 2px #ffb4b7;
+      2px 2px 2px #ffb4b7;
     }
   }
 }
 
 .section-map {
-	span.card-title {
-		color: #ee6e73;
-		font-weight: 300;
-	}
+  span.card-title {
+    color: #ee6e73;
+    font-weight: 300;
+  }
 }
-
 
 /* Producto
  ------------ */
@@ -81,8 +80,7 @@ nav {
       display: block;
     }
   }
- }
-
+}
 
 .container.product-page {
   .card .card-action {
@@ -111,7 +109,6 @@ nav {
   }
 }
 
-
 .productos.pizzas {
   .card.hoverable {
     .card-content {
@@ -131,7 +128,6 @@ nav .brand-logo {
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
 }
-
 
 .parallax-container {
   height: 200px;
