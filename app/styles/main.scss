@@ -132,3 +132,45 @@ nav .brand-logo {
 .parallax-container {
   height: 200px;
 }
+
+.address-data {
+  padding: 10px 20px;
+  color: white;
+
+  & > span {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  small {
+    color: #F8BBD0;
+  }
+
+  span.iconos {
+    width: 35px;
+    height: 35px;
+    background-color: #333;
+    border-radius: 50%;
+
+    img {
+      width: 30px;
+    }
+  }
+
+  p.telf {
+    span {
+      color: #880e4f;
+      font-family: monospace;
+      font-size: 17px;
+      font-weight: 600;
+    }
+  }
+
+  p.address {
+    font-weight: 200;
+  }
+}
+
+p.mt-10 {
+  margin-top: 10px;
+}
