@@ -18,6 +18,12 @@ nav {
       a {
         color: #d87684;
       }
+      &.custom {
+        font-weight: bold;
+        a {
+          color: #c22339;
+        }
+      }
     }
   }
 }
