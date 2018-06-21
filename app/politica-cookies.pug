@@ -1,0 +1,94 @@
+doctype html
+html.no-js(lang='es')
+  head
+    meta(charset='utf-8')
+    meta(name='description', content='Politica de cookies')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title KPRICHOS ARGENTINOS - Aviso legal
+    link(rel='apple-touch-icon', href='apple-touch-icon.png')
+    // Place favicon.ico in the root directory
+
+    // build:css styles/vendor.css
+    // bower:css
+    link(rel='stylesheet', href='/bower_components/materialize/bin/materialize.css')
+    link(rel='stylesheet', href='/bower_components/slick-carousel/slick/slick-theme.css')
+    // endbower
+    // endbuild
+
+    // build:css styles/main.css
+    link(rel='stylesheet', href='styles/main.css')
+    // endbuild
+
+    // build:js scripts/vendor/modernizr.js
+    script(src='/bower_components/modernizr/modernizr.js')
+    // endbuild
+
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+
+  body
+    <!--[if lt IE 10]>
+    p.browserupgrade You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+    <![endif]-->
+
+
+    //- facebook
+    include includes/facebook
+
+
+    .container
+      include includes/nav-menu
+
+      .col.s8.offset-s2
+        .section
+          h1 Política de cookies
+
+          div.cookies
+            p Las cookies son importantes para el correcto funcionamiento de esta web. Para mejorar tu experiencia de navegación, utilizamos cookies para recordar detalles de inicio de sesión y proporcionarte un inicio de sesión seguro. También recopilamos estadísticas para optimizar la funcionalidad del sitio y proporcionar contenidos a la medida de tus intereses. Puedes leer nuestra política de cookies, y hacer clic en Aceptar en la barra inferior para aceptar las cookies y explorar el sitio, y si no te convence Denegar su uso. Como no podemos garantizar tu seguridad sin el uso de cookies, si deniegas el permiso a que las utilicemos te tendremos que redirigir fuera de la web.
+
+            h5 ¿Qué es una Cookie?
+            p Es un fichero que se descarga en tu ordenador u otro dispositivo al acceder a determinadas páginas web que recogen información sobre tu navegación en dicho sitio web. En algunos casos las cookies resultan necesarias para facilitar la navegación y permiten almacenar y recuperar información sobre los hábitos de navegación de un usuario o de tu equipo, entre otras cosas y, según la información que contengan y de la forma en que utilices tu equipo, pueden utilizarse para reconocer al usuario.
+
+            h5 Identificación de Cookies Utilizadas
+            p Siguiendo las directrices establecidas por la Agencia Española de Protección de Datos, las cookies empleadas en esta web se clasifican de la siguiente forma:
+            ul.styled-list
+              li Cookies propias: Son aquéllas que se envían al equipo terminal del usuario desde un equipo o dominio gestionado por el propio editor y desde el que se presta el servicio solicitado por el usuario.
+              li Cookies de terceros: Son aquéllas que se envían al equipo terminal del usuario desde un equipo o dominio que no es gestionado por el editor, sino por otra entidad que trata los datos obtenidos a través de las cookies.
+              li Cookies de sesión: Son las diseñadas para recabar y almacenar datos mientras el usuario accede a una página web y almacena información que solo interesa conservar para la prestación del servicio solicitado por el usuario en una sola ocasión.
+              li Cookies persistentes: Son las que tienen un plazo de caducidad de un máximo de 2 años desde la fecha de creación, lo que significa que durante ese tiempo los datos seguirán almacenados en el terminal, pudiendo ser accedidos y tratados.
+              li Cookies técnicas: Permiten al usuario la navegación a través de una página web, plataforma o aplicación y la utilización de las diferentes opciones o servicios que en ella existan.
+              li Cookies de análisis: Permiten al responsable de las mismas, el seguimiento y análisis del comportamiento de los usuarios de los sitios web a los que están vinculadas. La información recogida mediante este tipo de cookies se utiliza en la medición de la actividad de los sitios web, aplicación o plataforma y para la elaboración de perfiles de navegación de los usuarios de dichos sitios, aplicaciones y plataformas, con el fin de introducir mejoras en función del análisis de los datos de uso que hacen los usuarios del servicio.
+              li Cookies de publicidad comportamental: Permiten la gestión, de la forma más eficaz posible, de los espacios publicitarios que, en su caso, el editor haya incluido en una página web, aplicación o plataforma desde la que presta el servicio solicitado. Estas cookies almacenan información del comportamiento de los usuarios obtenida a través de la observación continuada de sus hábitos de navegación, lo que permite desarrollar un perfil específico para mostrar publicidad en función del mismo.
+
+            h5 Desactivación de Cookies
+            p Puedes permitir, bloquear o eliminar las cookies instaladas en tu equipo mediante la configuración de las opciones del navegador instalado en tu ordenador. Por favor, lee atentamente la sección de ayuda de tu navegador para conocer más acerca de cómo activar el “modo privado” o desbloquear determinadas cookies.
+            ul.styled-list
+              li
+                b Internet Explorer:
+                | &nbsp;Herramientas -> Opciones de Internet -> Privacidad -> Configuración. Para más información, puedes consultar el soporte de Microsoft o la Ayuda del navegador.
+              li
+                b Firefox:
+                | &nbsp;Herramientas -> Opciones -> Privacidad -> Historial -> Configuración Personalizada. Para más información, puedes consultar el soporte de Mozilla o la Ayuda del navegador.
+              li
+                b Chrome:
+                | &nbsp;Configuración -> Mostrar opciones avanzadas -> Privacidad -> Configuración de contenido. Para más información, puedes consultar el soporte de Google o la Ayuda del navegador.
+              li
+                b Safari:
+                | &nbsp;Preferencias -> Seguridad. Para más información, puedes consultar el soporte de Apple o la Ayuda del navegador.
+
+      br
+      br
+
+    include includes/footer.pug
+
+    include includes/analytics
+
+
+    // build:js scripts/vendor.js
+    // bower:js
+    include includes/scriptsjs
+    // endbower
+    // endbuild
+
+    // build:js scripts/main.js
+    script(src='scripts/main.js')
+    // endbuild

@@ -1,36 +1,40 @@
 footer.page-footer
   .container
     .row
-      .col.l6.s12(itemscope itemtype="http://schema.org/Restaurant")
-        //- img(src="images/logo-kprichos2.png", width="200px")
+      .col.l4.s12(itemscope itemtype="http://schema.org/Restaurant")
+        // img(src="images/logo-kprichos2.png", width="200px")
         h5.white-text(itemprop="name") Kprichos Argentinos
-        |
         p.grey-text.text-lighten-4(itemprop="servesCuisine") Comida tradicional Argentina
         p.grey-text.text-lighten-4 Pastelería. Especialidades Argentinas. Catering. Envío a domicilio
         span.red-text.text-darken-3(itemprop="telephone") 626 583 617
         span.red-text.text-darken-3 &nbsp;- kaprichosargentinos@yahoo.es
         span.clase-oculta(itemprop="acceptsReservations") yes
         div(itemprop="address" itemscope itemtype="http://schema.org/PostalAddress")
+          span.mr-5
+            i.red-text.text-darken-2.tiny.material-icons location_on
           span.mr-5.red-text.text-darken-4(itemprop="streetAddress") Calle de Hermosilla, 82
           span.mr-5.red-text.text-darken-4(itemprop="addressLocality") Madrid
           span.mr-5.red-text.text-darken-4(itemprop="postalCode") 28001
-        |
-      .col.l4.offset-l2.s12
+      .col.l4.s12
         h5.white-text Productos
-        |
         ul
           li
-            a.btn-flat.grey-text.text-lighten-3(href='#!') Empanadillas
-            |
+            a.btn-flat.grey-text.text-lighten-3(href='/productos.html') Empanadillas
           li
-            a.btn-flat.grey-text.text-lighten-3(href='#!') Pizzas
-            |
+            a.btn-flat.grey-text.text-lighten-3(href='/productos.html') Pizzas
           li
-            a.btn-flat.grey-text.text-lighten-3(href='#!') Sandwiches
-            |
+            a.btn-flat.grey-text.text-lighten-3(href='/productos.html') Sandwiches
           li
-            a.btn-flat.grey-text.text-lighten-3(href='#!') Postres
-  |
+            a.btn-flat.grey-text.text-lighten-3(href='/productos.html') Postres
+
+      .col.l4.s12
+        h5.white-text Acerca de
+        ul
+          li
+            a.btn-flat.grey-text.text-lighten-3(href='/aviso-legal.html') Aviso legal
+          li
+            a.btn-flat.grey-text.text-lighten-3(href='/politica-cookies.html') Politica de Coookies
+
   .footer-copyright
     .container
       | &copy; 2017 - Kprichos Argentinos
