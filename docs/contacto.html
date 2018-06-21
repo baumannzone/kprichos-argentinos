@@ -60,7 +60,7 @@
                 <p class="address">Calle de Hermosilla, 82, 28001 Madrid&nbsp;<small>(Mercado de Torrijos)</small></p>
                 <p class="telf"><span>91 576 02 39</span></p>
               </div>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6074.4780645318015!2d-3.676763600000006!3d40.4257057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x225da0138560477b!2sKprichos+Argentinos!5e0!3m2!1sen!2ses!4v1486840451068" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6074.4780645318015!2d-3.676763600000006!3d40.4257057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x225da0138560477b!2sKprichos+Argentinos!5e0!3m2!1sen!2ses!4v1486840451068" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen=""></iframe>
               <div class="section">
                 <div class="divider"></div>
               </div>
@@ -82,7 +82,7 @@
                 <p class="address">Calle Bolivia, 9, 28016 Madrid&nbsp;<small>(Mercado de Chamartín)</small></p>
                 <p class="telf"><span>91 000 18 01</span></p>
               </div>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12143.22535824288!2d-3.686787432332048!3d40.4574230793604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4229212faea3d7%3A0x9a7bdcc58b6ef228!2sCalle+Bolivia%2C+9%2C+28016+Madrid!5e0!3m2!1ses!2ses!4v1488719823239" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12143.22535824288!2d-3.686787432332048!3d40.4574230793604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4229212faea3d7%3A0x9a7bdcc58b6ef228!2sCalle+Bolivia%2C+9%2C+28016+Madrid!5e0!3m2!1ses!2ses!4v1488719823239" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen=""></iframe>
             </div>
             <div class="card-action center-align"><a class="btn" href="https://www.google.com/maps?ll=40.425706,-3.676764&amp;z=15&amp;t=m&amp;hl=es-ES&amp;gl=ES&amp;mapclient=embed&amp;cid=2476311375826143099">Ampliar mapa</a></div>
           </div>
@@ -100,7 +100,7 @@
                 </p>
                 <p class="telf"><span>91 010 14 13</span></p>
               </div>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.184190651987!2d-3.6737307848853678!3d40.42692017936406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228b08948f74f%3A0x2a614a0d8c081f01!2sCalle+de+Alcal%C3%A1%2C+181%2C+28009+Madrid!5e0!3m2!1ses!2ses!4v1488721084029" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.184190651987!2d-3.6737307848853678!3d40.42692017936406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228b08948f74f%3A0x2a614a0d8c081f01!2sCalle+de+Alcal%C3%A1%2C+181%2C+28009+Madrid!5e0!3m2!1ses!2ses!4v1488721084029" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen=""></iframe>
               <div class="section">
                 <div class="divider"></div>
               </div>
@@ -118,18 +118,27 @@
     <footer class="page-footer">
       <div class="container">
         <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Kprichos Argentinos</h5>
-            <p class="grey-text text-lighten-4">Comida tradicional. Pastelería. Especialidades Argentinas. Catering. Envío a domicilio</p>
-            <p class="red-text text-darken-3">626 583 617 - kaprichosargentinos@yahoo.es</p>
+          <div class="col l4 s12" itemscope itemtype="http://schema.org/Restaurant">
+            <!-- img(src="images/logo-kprichos2.png", width="200px")-->
+            <h5 class="white-text" itemprop="name">Kprichos Argentinos</h5>
+            <p class="grey-text text-lighten-4" itemprop="servesCuisine">Comida tradicional Argentina</p>
+            <p class="grey-text text-lighten-4">Pastelería. Especialidades Argentinas. Catering. Envío a domicilio</p><span class="red-text text-darken-3" itemprop="telephone">626 583 617</span><span class="red-text text-darken-3">&nbsp;- kaprichosargentinos@yahoo.es</span><span class="clase-oculta" itemprop="acceptsReservations">yes</span>
+            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span class="mr-5"><i class="red-text text-darken-2 tiny material-icons">location_on</i></span><span class="mr-5 red-text text-darken-4" itemprop="streetAddress">Calle de Hermosilla, 82</span><span class="mr-5 red-text text-darken-4" itemprop="addressLocality">Madrid</span><span class="mr-5 red-text text-darken-4" itemprop="postalCode">28001</span></div>
           </div>
-          <div class="col l4 offset-l2 s12">
+          <div class="col l4 s12">
             <h5 class="white-text">Productos</h5>
             <ul>
-              <li><a class="btn-flat grey-text text-lighten-3" href="#!">Empanadillas</a></li>
-              <li><a class="btn-flat grey-text text-lighten-3" href="#!">Pizzas</a></li>
-              <li><a class="btn-flat grey-text text-lighten-3" href="#!">Sandwiches</a></li>
-              <li><a class="btn-flat grey-text text-lighten-3" href="#!">Postres</a></li>
+              <li><a class="btn-flat grey-text text-lighten-3" href="/productos.html">Empanadillas</a></li>
+              <li><a class="btn-flat grey-text text-lighten-3" href="/productos.html">Pizzas</a></li>
+              <li><a class="btn-flat grey-text text-lighten-3" href="/productos.html">Sandwiches</a></li>
+              <li><a class="btn-flat grey-text text-lighten-3" href="/productos.html">Postres</a></li>
+            </ul>
+          </div>
+          <div class="col l4 s12">
+            <h5 class="white-text">Acerca de</h5>
+            <ul>
+              <li><a class="btn-flat grey-text text-lighten-3" href="/aviso-legal.html">Aviso legal</a></li>
+              <li><a class="btn-flat grey-text text-lighten-3" href="/politica-cookies.html">Politica de Coookies</a></li>
             </ul>
           </div>
         </div>

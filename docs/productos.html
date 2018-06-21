@@ -663,18 +663,27 @@
     <footer class="page-footer">
       <div class="container">
         <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Kprichos Argentinos</h5>
-            <p class="grey-text text-lighten-4">Comida tradicional. Pastelería. Especialidades Argentinas. Catering. Envío a domicilio</p>
-            <p class="red-text text-darken-3">626 583 617 - kaprichosargentinos@yahoo.es</p>
+          <div class="col l4 s12" itemscope itemtype="http://schema.org/Restaurant">
+            <!-- img(src="images/logo-kprichos2.png", width="200px")-->
+            <h5 class="white-text" itemprop="name">Kprichos Argentinos</h5>
+            <p class="grey-text text-lighten-4" itemprop="servesCuisine">Comida tradicional Argentina</p>
+            <p class="grey-text text-lighten-4">Pastelería. Especialidades Argentinas. Catering. Envío a domicilio</p><span class="red-text text-darken-3" itemprop="telephone">626 583 617</span><span class="red-text text-darken-3">&nbsp;- kaprichosargentinos@yahoo.es</span><span class="clase-oculta" itemprop="acceptsReservations">yes</span>
+            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span class="mr-5"><i class="red-text text-darken-2 tiny material-icons">location_on</i></span><span class="mr-5 red-text text-darken-4" itemprop="streetAddress">Calle de Hermosilla, 82</span><span class="mr-5 red-text text-darken-4" itemprop="addressLocality">Madrid</span><span class="mr-5 red-text text-darken-4" itemprop="postalCode">28001</span></div>
           </div>
-          <div class="col l4 offset-l2 s12">
+          <div class="col l4 s12">
             <h5 class="white-text">Productos</h5>
             <ul>
-              <li><a class="btn-flat grey-text text-lighten-3" href="#!">Empanadillas</a></li>
-              <li><a class="btn-flat grey-text text-lighten-3" href="#!">Pizzas</a></li>
-              <li><a class="btn-flat grey-text text-lighten-3" href="#!">Sandwiches</a></li>
-              <li><a class="btn-flat grey-text text-lighten-3" href="#!">Postres</a></li>
+              <li><a class="btn-flat grey-text text-lighten-3" href="/productos.html">Empanadillas</a></li>
+              <li><a class="btn-flat grey-text text-lighten-3" href="/productos.html">Pizzas</a></li>
+              <li><a class="btn-flat grey-text text-lighten-3" href="/productos.html">Sandwiches</a></li>
+              <li><a class="btn-flat grey-text text-lighten-3" href="/productos.html">Postres</a></li>
+            </ul>
+          </div>
+          <div class="col l4 s12">
+            <h5 class="white-text">Acerca de</h5>
+            <ul>
+              <li><a class="btn-flat grey-text text-lighten-3" href="/aviso-legal.html">Aviso legal</a></li>
+              <li><a class="btn-flat grey-text text-lighten-3" href="/politica-cookies.html">Politica de Coookies</a></li>
             </ul>
           </div>
         </div>
