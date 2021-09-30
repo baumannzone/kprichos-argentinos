@@ -104,7 +104,7 @@ gulp.task('extras', () => {
 gulp.task('clean', del.bind(null, ['.tmp', 'docs']));
 
 gulp.task('serve', () => {
-  runSequence(['clean', 'wiredep'], ['views','styles', 'scripts', 'fonts'], () => {
+  runSequence(['clean', 'wiredep'], ['views','styles', 'scripts'/*, 'fonts'*/], () => {
     browserSync.init({
       notify: false,
       port: 9000,
