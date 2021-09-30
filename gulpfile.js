@@ -86,10 +86,10 @@ gulp.task('images', () => {
     .pipe(gulp.dest('docs/images'));
 });
 
-gulp.task('fonts', function() {
-  return gulp.src([ 'app/fonts/**/'])
-    .pipe(gulp.dest('docs/fonts/'));
-});
+// gulp.task('fonts', function() {
+//   return gulp.src([ 'app/fonts/**/'])
+//     .pipe(gulp.dest('docs/fonts/'));
+// });
 
 gulp.task('extras', () => {
   return gulp.src([
