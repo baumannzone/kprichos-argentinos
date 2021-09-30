@@ -24,6 +24,7 @@ html.no-js(lang='es')
     // endbuild
 
     link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+    script(src="https://cdn.usefathom.com/script.js", data-site="XHYIWLET", defer)
 
     include includes/cookies
 
@@ -70,7 +71,7 @@ html.no-js(lang='es')
         .col.s12.m4
           .card
             .card-image
-              img(src='images/home/empanadas.png')
+              img(src='images/home/empanadas.png' alt='Empanadas KPRICHOS ARGENTINOS')
               |
               span.card-title EMPANADILLAS
             |
@@ -85,7 +86,7 @@ html.no-js(lang='es')
         .col.s12.m4
           .card
             .card-image
-              img(src='images/home/pizzas.png')
+              img(src='images/home/pizzas.png' alt='Pizzas KPRICHOS ARGENTINOS')
               |
               span.card-title PIZZAS
             |
@@ -99,7 +100,7 @@ html.no-js(lang='es')
         .col.s12.m4
           .card
             .card-image
-              img(src='images/home/sandwich.png')
+              img(src='images/home/sandwich.png' alt="Sandwich KPRICHOS ARGENTINOS")
               |
               span.card-title SÁNDWICHES
             .card-content
@@ -127,7 +128,7 @@ html.no-js(lang='es')
               p: strong Calle de Alcántara, 9, 28006 Madrid
             .card-action
               a.teal-text(href="https://www.facebook.com/kprichos.argentinos/")
-                img(src="images/facebook.png", width="200px")
+                img(src="images/facebook.png", width="200px" alt="Facebook Logo")
 
               p Síguenos en facebook para ser el primero en enterarte de nuestras ofertas
               p: a.teal-text(href="https://www.facebook.com/kprichos.argentinos/") Ver página en FB
@@ -137,8 +138,6 @@ html.no-js(lang='es')
 
 
     include includes/footer.pug
-
-    include includes/analytics
 
 
     // build:js scripts/vendor.js
